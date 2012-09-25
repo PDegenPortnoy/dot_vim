@@ -74,11 +74,17 @@ map <leader>tm :tabmove
 "vnoremap ; :
 "vnoremap : ;
 
+autocmd!
+
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
-" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+" or the MakeGreen plugin and Ruby RSpec. Uncomment to use.
+autocmd! BufNewFile,BufRead *_spec.rb compiler rspec
 
+""""""""""""""""""""""""""""""""""""""""""
 
+" Turn off markdown syntax
+autocmd! FileType mkd setlocal syn=off  
+autocmd! FileType mk  setlocal syn=off 
