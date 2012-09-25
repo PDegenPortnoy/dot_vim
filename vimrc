@@ -54,15 +54,15 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 colorscheme vividchalk
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+map <leader>bt :tabnew<cr>
+map <leader>be :tabedit
+map <leader>bc :tabclose<cr>
+map <leader>bo :tabonly<cr>
+map <leader>bn :tabnext<cr>
+map <leader>bp :tabprevious<cr>
+map <leader>bf :tabfirst<cr>
+map <leader>bl :tablast<cr>
+map <leader>bm :tabmove
 
 " Uncomment to use Jamis Buck's file opening plugin
 " map <Leader>t :FuzzyFinderTextMate<cr>
