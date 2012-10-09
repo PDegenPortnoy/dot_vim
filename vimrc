@@ -74,7 +74,7 @@ map <leader>bm :tabmove
 "vnoremap ; :
 "vnoremap : ;
 
-autocmd!
+" autocmd!
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
@@ -86,5 +86,5 @@ autocmd! BufNewFile,BufRead *_spec.rb compiler rspec
 """"""""""""""""""""""""""""""""""""""""""
 
 " Turn off markdown syntax
-autocmd! FileType mkd setlocal syn=off  
-autocmd! FileType mk  setlocal syn=off 
+" autocmd! FileType mkd setlocal syn=off  
+" autocmd! FileType mk  setlocal syn=off 
