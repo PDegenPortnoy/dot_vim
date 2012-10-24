@@ -50,6 +50,18 @@ set laststatus=2                  " Show the status line all the time
 " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Highlight the current line
+set cursorline
+
+" Set Window Sizing
+set winwidth=120
+" Winheight needs to be bigger than we want to set winminheight.  But
+" if winheight is set to a large value before winminheight, winminheight
+" set will fail
+set winheight=5
+set winminheight=5
+set winheight=999
+
 " Or use vividchalk
 colorscheme vividchalk
 
