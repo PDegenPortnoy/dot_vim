@@ -58,8 +58,8 @@ set winwidth=120
 " Winheight needs to be bigger than we want to set winminheight.  But
 " if winheight is set to a large value before winminheight, winminheight
 " set will fail
-set winheight=5
-set winminheight=5
+set winheight=8
+set winminheight=8
 set winheight=999
 
 " Or use vividchalk
