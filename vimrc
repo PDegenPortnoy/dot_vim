@@ -92,7 +92,7 @@ map <leader>bm :tabmove
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
-" or the MakeGreen plugin and Ruby RSpec. Uncomment to use.
+" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd! BufNewFile,BufRead *_spec.rb compiler rspec
 
 """"""""""""""""""""""""""""""""""""""""""
