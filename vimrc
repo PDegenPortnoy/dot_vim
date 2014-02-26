@@ -25,6 +25,7 @@ set smartcase                     " But case-sensitive if expression contains a 
 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
+set relativenumber                " Show relative numbers
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
@@ -58,8 +59,8 @@ set winwidth=120
 " Winheight needs to be bigger than we want to set winminheight.  But
 " if winheight is set to a large value before winminheight, winminheight
 " set will fail
-set winheight=5
-set winminheight=5
+set winheight=8
+set winminheight=8
 set winheight=999
 
 " Or use vividchalk
@@ -92,7 +93,7 @@ map <leader>bm :tabmove
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
-" or the MakeGreen plugin and Ruby RSpec. Uncomment to use.
+" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd! BufNewFile,BufRead *_spec.rb compiler rspec
 
 """"""""""""""""""""""""""""""""""""""""""
