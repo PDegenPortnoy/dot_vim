@@ -101,3 +101,9 @@ autocmd! BufNewFile,BufRead *_spec.rb compiler rspec
 " Turn off markdown syntax
 " autocmd! FileType mkd setlocal syn=off  
 " autocmd! FileType mk  setlocal syn=off 
+
+" Add a shortcut for ctags
+let Tlist_WinWidth = 50
+map <Leader>ct :Tlist<CR>
+" Builds tags lib for current working directory
+map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
